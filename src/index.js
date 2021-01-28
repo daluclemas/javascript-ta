@@ -1,6 +1,19 @@
 // complete the function
 function palindrom(str) {
   // code goes here
+   // console.log(str +' hey');
+
+   let makeArr=str.split(' ');
+   // console.log(makeArr);
+
+   let arr=makeArr.filter(item=>{
+       return item.split('').reverse().join('')===item;
+       
+   });
+
+  //  console.log(arr.join(' '));
+
+  return arr.join(' ');
 }
 
 function solution(arg) {
